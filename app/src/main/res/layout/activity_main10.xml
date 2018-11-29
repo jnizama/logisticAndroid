@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/fondoal"
+    android:orientation="vertical"
+    tools:context="com.example.ronald.logistica.Main3Activity">
+
+    <TextView
+        android:id="@+id/textviewAlmacen"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Almacen"
+        android:textColor="#0E8AEE"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnConsultar_Codigo"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="90dp"
+        android:onClick="onIngreso"
+        android:text="INGRESO"
+        android:textColor="#002BFF" />
+
+    <Button
+        android:id="@+id/btnStock"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:text="SALIDA"
+        android:onClick="onSalida"
+        android:textColor="#002BFF" />
+
+    <Button
+        android:id="@+id/btnMenu_Principal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="onCancelar"
+        android:layout_marginTop="100dp"
+        android:text="MENU PRINCIPAL"
+        android:textColor="#f00" />
+</TableLayout>
+

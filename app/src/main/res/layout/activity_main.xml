@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clave"
+    android:orientation="vertical"
+    android:padding="48dp"
+    tools:context="com.example.ronald.logistica.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logologistica" />
+
+    <EditText
+        android:id="@+id/input_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:inputType="textCapCharacters"
+        android:hint="Usuario" />
+
+    <EditText
+        android:id="@+id/input_contrasena"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/boton_iniciar_sesion"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:onClick="onIngresar"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="INGRESAR" />
+
+    <TextView
+        android:id="@+id/texto_olvidaste_contrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="¿Olvidaste Tu Contraseña?"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0E8AEE" />
+
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/requerimiento1"
+    android:orientation="vertical"
+    tools:context="com.example.ronald.logistica.Main3Activity">
+
+    <TextView
+        android:id="@+id/textDetalleRequerimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="DETALLE REQUERIMIENTO"
+        android:textColor="#0E8AEE"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewNombres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="Cod. Item" />
+
+                    <EditText
+                        android:id="@+id/txtcodigoItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:inputType="text"
+                        android:maxLength="10"
+                        android:paddingTop="1dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/LabelDescripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="Descripción"
+                        tools:text="Descripción" />
+
+                    <EditText
+                        android:id="@+id/txtDescripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:inputType="text"
+                        android:maxLength="10"
+                        android:paddingTop="1dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="Cantidad" />
+
+                    <EditText
+                        android:id="@+id/txtCantidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:text="0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:id="@+id/textViewTitleDireccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="Precio Unitario" />
+
+                    <EditText
+                        android:id="@+id/txtPrecioUnitario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:maxLength="15"
+                        android:text="0.00" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewSeleMesa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="Precio Total" />
+
+                    <EditText
+                        android:id="@+id/txtPrecioTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawSelectorOnTop="true"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:enabled="false"
+                        android:text="0.00" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <Button
+                        android:id="@+id/btnDetalleRequerimiento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:enabled="true"
+                        android:onClick="onGrabar"
+                        android:text="Grabar"
+                        android:textSize="14sp"
+                        android:textStyle="normal|bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</TableLayout>

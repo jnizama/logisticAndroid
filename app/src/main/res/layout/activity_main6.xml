@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ajustes"
+    tools:context="com.example.ronald.logistica.Main6Activity">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+    <requestFocus />
+    <Button
+        android:id="@+id/buttonCancelar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonGuardar"
+        android:layout_alignBottom="@+id/buttonGuardar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onCancelar"
+        android:text="CANCELAR"
+        android:textColor="#002BFF" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="140dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/textView7"
+        android:layout_alignTop="@+id/buttonCancelar"
+        android:layout_toEndOf="@+id/buttonCancelar"
+        android:layout_toLeftOf="@+id/buttonGuardar"
+        android:layout_toRightOf="@+id/buttonCancelar"
+        android:gravity="center"
+        android:text="Registro Inventario"
+        android:textColor="#750A0A"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonGuardar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="13dp"
+        android:onClick="onGuardar"
+        android:text="GUARDAR"
+        android:textColor="#002BFF" />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="23dp"
+        android:text="Codigo de Barra"
+        android:textColor="#002BFF"
+        android:textSize="18sp"
+        android:layout_below="@+id/buttonCancelar"
+        android:layout_toRightOf="@+id/linearLayout2"
+        android:layout_toEndOf="@+id/linearLayout2" />
+
+    <EditText
+        android:id="@+id/txtnumero"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/txtnumero"
+        android:layout_alignLeft="@+id/buttonGuardar"
+        android:layout_alignStart="@+id/buttonGuardar"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="7dp"
+        android:weightSum="1">
+        <SurfaceView
+            android:id="@+id/camera_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtnumero"
+        android:layout_alignStart="@+id/txtnumero"
+        android:layout_below="@+id/txtnumero"
+        android:layout_marginTop="23dp"
+        android:text="Codigo del Producto"
+        android:textColor="#002BFF"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtcodProducto"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_below="@+id/textView8"
+        android:background="#EEEEEE"
+        android:maxLength="4" />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtcodProducto"
+        android:layout_alignStart="@+id/txtcodProducto"
+        android:layout_below="@+id/txtcodProducto"
+        android:layout_marginTop="18dp"
+        android:text="Titulo / Descripcion"
+        android:textColor="#002BFF"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/txtTitulo"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/linearLayout3"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignRight="@+id/linearLayout3"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_below="@+id/textView9"
+        android:background="#EEEEEE" />
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTitulo"
+        android:layout_alignStart="@+id/txtTitulo"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_marginTop="17dp"
+        android:text="Unidad de Inventario"
+        android:textColor="#002BFF"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/txtUnidadInventario"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_alignEnd="@+id/txtTitulo"
+        android:layout_alignRight="@+id/txtTitulo"
+        android:layout_alignTop="@+id/textView11"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#EEEEEE" />
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_below="@+id/txtUnidadInventario"
+        android:layout_marginTop="22dp"
+        android:text="Precio por Unidad"
+        android:textColor="#002BFF"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/txtPrecioUnitario"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/txtUnidadInventario"
+        android:layout_alignStart="@+id/txtUnidadInventario"
+        android:layout_alignTop="@+id/textView12"
+        android:background="#EEEEEE" />
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_below="@+id/txtPrecioUnitario"
+        android:layout_marginTop="18dp"
+        android:text="Ubicacion"
+        android:textColor="#002BFF"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/txtUbicacion"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/txtPrecioUnitario"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignRight="@+id/txtPrecioUnitario"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_below="@+id/textView13"
+        android:background="#EEEEEE" />
+
+    <Button
+        android:id="@+id/buttonBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_alignStart="@+id/linearLayout3"
+        android:layout_alignTop="@+id/textView8"
+        android:onClick="onBuscar"
+        android:text="Buscar" />
+</RelativeLayout>
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ordenes"
+    tools:context="com.example.ronald.logistica.Main8Activity">
+
+    <TextView
+        android:id="@+id/textviewOrdenesDeCompras"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="ORDENES DE COMPRAS"
+        android:textColor="#0E8AEE"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nº de Orden"
+                        android:textColor="#002BFF"/>
+                    <EditText
+                        android:id="@+id/txtnumOrden"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                         />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nº de Ruc"
+                        android:textColor="#002BFF" />
+                    <EditText
+                        android:id="@+id/txtnumRuc"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                         />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:background="@color/colorWhite"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="onConsultar"
+                android:text="CONSULTAR" />
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="onCancelar"
+                android:text="MENU PRINCIPAL" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</TableLayout>
+
+

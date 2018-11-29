@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/recibir"
+    tools:context="com.example.ronald.logistica.Main9Activity">
+
+    <TextView
+        android:id="@+id/Ingreso"
+        android:layout_width="185dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="INGRESO"
+        android:textColor="#0E8AEE"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:text="Código Item"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textStyle="normal|bold"
+                        android:id="@+id/textViewNombres" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/txtcodigoItem"
+                        android:gravity="top"
+                        android:paddingTop="0dp"
+                        android:maxLength="10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:text="Proveedor"
+                        android:textStyle="normal|bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewApellidos"
+                        tools:text="Proveedor" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/txtProveedor"
+                        android:gravity="top"
+                        android:paddingTop="0dp"
+                        android:maxLength="100" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal|bold"
+                        android:text="Descripción" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/txtDescripcion"
+                        android:gravity="top"
+                        android:paddingTop="0dp"
+                        android:maxLength="100"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewDatosPersonales"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textStyle="normal|bold"
+                        android:text="Fecha Ingreso" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/txtFechaIngreso"
+                        android:gravity="top"
+                        android:paddingTop="0dp"
+                        android:inputType="date"
+                        android:maxLength="10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:id="@+id/textViewTitleDireccion"
+                        android:textStyle="normal|bold"
+                        android:text="Garantia" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtGarantia"
+                        android:maxLength="100" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:text="Cantidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal|bold"
+                        android:id="@+id/textViewTeleCelu" />
+
+                    <EditText
+                        android:id="@+id/txtCantidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:paddingTop="0dp"
+                        android:text="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:text="Precio Unitario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal|bold"
+                        android:id="@+id/textViewDatosPago"
+                         />
+
+                    <EditText
+                        android:id="@+id/txtPrecioUnitario"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:paddingTop="0dp"
+                        android:text="0.00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:text="Precio Total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewDatosPago2"
+                        android:textStyle="normal|bold"
+                        />
+
+                    <EditText
+                        android:id="@+id/txtPrecioTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:inputType="numberDecimal"
+                        android:maxLength="20"
+                        android:enabled="false"
+                        android:paddingTop="0dp"
+                        android:text="0.00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:padding="12dp"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <Button
+                        android:id="@+id/btnGuardar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:onClick="onGuardar"
+                        android:enabled="true"
+                        android:textSize="14sp"
+                        android:text="Guardar"
+                        android:textStyle="normal|bold" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</TableLayout>
+

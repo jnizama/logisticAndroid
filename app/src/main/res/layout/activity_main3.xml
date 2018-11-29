@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/compraa"
+    android:orientation="vertical"
+    tools:context="com.example.ronald.logistica.Main3Activity">
+
+    <TextView
+        android:id="@+id/compras"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="COMPRAS"
+        android:textColor="#0E8AEE"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewNombres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="Num. Solicitud" />
+
+                    <EditText
+                        android:id="@+id/txtnumero"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:inputType="text"
+                        android:maxLength="100"
+                        android:paddingTop="1dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/lABLELFecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="Fecha Solicitud"
+                        tools:text="Fecha Solicitud" />
+
+                    <EditText
+                        android:id="@+id/txtFechaSolicitud"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:inputType="date"
+                        android:maxLength="100"
+                        android:paddingTop="1dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="Area Solicitante" />
+
+                    <EditText
+                        android:id="@+id/txtDescripcion"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="top"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="100"
+                        android:paddingTop="1dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewDatosPersonales"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="RESPONSABLE"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:id="@+id/textViewTitleDireccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="Nombres y Apellidos" />
+
+                    <EditText
+                        android:id="@+id/txtNombreApellidos"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="100" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textViewSeleMesa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:text="Num. DNI" />
+
+                    <EditText
+                        android:id="@+id/txtNumDni"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:drawSelectorOnTop="true"
+                        android:maxLength="100" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <Button
+                        android:id="@+id/btnDetalleRequerimiento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:enabled="true"
+                        android:onClick="onDetalleRequerimiento"
+                        android:text="Detalle"
+                        android:textSize="14sp"
+                        android:textStyle="normal|bold" />
+
+                    <Button
+                        android:id="@+id/btnMenuPrincipal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:enabled="true"
+                        android:onClick="RegresarMenuPrincipal"
+
+                        android:text="Regresar"
+                        android:textSize="14sp"
+                        android:textStyle="normal|bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</TableLayout>

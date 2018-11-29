@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ordenescompri"
+    tools:context="com.example.ronald.logistica.Main9Activity">
+
+    <TextView
+        android:id="@+id/textviewOrdenDeCompra"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="RESULTADO DE ORDEN DE COMPRA"
+        android:textColor="#0E8AEE"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nº Orden"
+                        android:textColor="#002BFF"/>
+                    <EditText
+                        android:id="@+id/txtnumOrden"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Proveedor"
+                        android:textColor="#002BFF" />
+                    <EditText
+                        android:id="@+id/txtProveedor"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Descripción"
+                        android:textColor="#002BFF" />
+                    <EditText
+                        android:id="@+id/txtDescripcion"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cantidad"
+                        android:textColor="#002BFF" />
+                    <EditText
+                        android:id="@+id/txtCantidad"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Precio Unitario"
+                        android:textColor="#002BFF" />
+                    <EditText
+                        android:id="@+id/txtPrecioUnitario"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Precio Total"
+                        android:textColor="#002BFF" />
+                    <EditText
+                        android:id="@+id/txtPrecioTotal"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:background="@color/colorWhite"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="onCancelar"
+                android:text="Regresar" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</TableLayout>
+
